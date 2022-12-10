@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const uploadController = require("../ingonyama-node-v1/controllers/upload");
+const uploadController = require("../controllers/upload");
 
 let routes = (app) => {
   router.post("/upload", uploadController.uploadFiles);
