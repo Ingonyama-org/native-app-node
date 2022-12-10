@@ -3,6 +3,7 @@ const router = express.Router();
 const uploadController = require("../controllers/upload");
 
 let routes = (app) => {
+  app.get("/", (req, res) => res.status(200).send("Welcome to Karibu"));
   router.post("/upload", uploadController.uploadFiles);
   router.get("/files", uploadController.getListFiles);
 
