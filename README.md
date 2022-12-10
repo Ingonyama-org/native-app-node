@@ -1,1 +1,0 @@
-# ingonyama-node-v1

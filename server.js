@@ -4,7 +4,7 @@ const app = express();
 const initRoutes = require("./routes");
 
 var corsOptions = {
-  origin: "http://192.168.43.168:19000/",
+  origin: "*",
 };
 
 app.use(cors(corsOptions));

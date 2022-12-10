@@ -6,7 +6,7 @@ const GridFSBucket = require("mongodb").GridFSBucket;
 
 const url = dbConfig.url;
 
-const baseUrl = "http://localhost:8080/files/";
+const baseUrl = "https://ingonyama-node-v2.herokuapp.com/files/";
 
 const mongoClient = new MongoClient(url);
 
