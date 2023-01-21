@@ -20,9 +20,12 @@ const uploadFiles = async (req, res) => {
         message: "You must select a file.",
       });
     }
-
     return res.send({
-      message: { img_id: req.file.id, img_filename: req.file.filename },
+      message: {
+        img_id: req.file.id,
+        img_filename: req.file.filename,
+        imgFullUrl: baseUrl + req.file.filename,
+      },
     });
   } catch (error) {
     console.log(error);
