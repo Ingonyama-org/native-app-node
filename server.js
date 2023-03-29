@@ -11,7 +11,7 @@ app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 initRoutes(app);
 
-let port = process.env.PORT || 500;
+let port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Running at localhost:${port}`);
 });
